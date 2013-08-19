@@ -12,9 +12,7 @@
 			set_error_handler("onError");
 
 			require("Assert.php");
-			foreach (glob("src/*.php") as $file) {
-				require($file);
-			}
+			require("src/Scalibrary.php");
 			foreach (glob("tests/*.php") as $file) {
 				echo "<div><b>$file</b></div>";
 				echo "<div>";
